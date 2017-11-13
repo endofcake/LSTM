@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+
+  python:
+    image: python:3.6.3
+    volumes:
+      - "./:/src"
+    entrypoint:
+      - /bin/sh
+      - -c
+      - sleep 1d
